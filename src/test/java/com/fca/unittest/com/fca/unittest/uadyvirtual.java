@@ -27,9 +27,9 @@ public class uadyvirtual {
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    js = (JavascriptExecutor) driver;
+    js = (JavascriptExecutor) drivers;
   }
-
+//pruebas de travis
   @Test
   public void testAccesoCorrecto() throws Exception {
     driver.get("https://www.google.com/search?q=uady+virtual&rlz=1C1UUXU_esMX987MX987&oq=uady+vir&aqs=chrome.0.0i131i433i512l2j0i512j69i57j0i512l6.2636j0j7&sourceid=chrome&ie=UTF-8");
